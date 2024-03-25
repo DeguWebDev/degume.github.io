@@ -25,16 +25,13 @@ img {
 }
 
 body {
-	background: #542f19 url(images/wood.webp) top left fixed;
+	background: #542f19 url(images/wood.png) top left fixed;
   	color: #FFF;
   	font-family: 'AllerDisplay', Arial, sans-serif;
   	font-size: 18px;
   	line-height: 1;
   	position: relative;
   	text-align: center;
-}
-body.nowebp {
-    background-image: url(images/wood.png);
 }
 
 a, a:hover {
