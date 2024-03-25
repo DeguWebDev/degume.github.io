@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'AllerDisplay';
+    src: url('fonts/allerdisplay-webfont.woff2') format('woff2'),
+         url('fonts/allerdisplay-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.sr {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+	background: #542f19 url(images/wood.webp) top left fixed;
+  	color: #FFF;
+  	font-family: 'AllerDisplay', Arial, sans-serif;
+  	font-size: 18px;
+  	line-height: 1;
+  	position: relative;
+  	text-align: center;
+}
+body.nowebp {
+    background-image: url(images/wood.png);
+}
+
+a, a:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 30px;
+	gap: 60px 30px;
+}
+
+article {
+	width: 30%;
+	width: Calc(33% - 20px);
+}
+
+article .logo {
+	display: inline-block;
+	font-size: 40px;
+}
+article .logo img {
+	display: block;
+	margin: 0 auto 5px;
+	width: 150px;
+	height: auto!important;
+}
+
+article:first-of-type {
+	width: 100%;
+}
+article:first-of-type .logo img {
+	width: 200px;
+}
+
+article .social {
+	list-style: none;
+	margin: 10px auto 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+article .social a {
+	display: block;
+	padding: 8px;
+}
+article .social a img {
+	width: auto!important;
+	height: 32px;
+	filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 1000px) {
+	main {
+		padding-bottom: 60px;
+	}
+	article {
+		width: 100%;
+	}
+}
+
+@media (max-width: 586px) {
+	article:first-of-type .social {
+		max-width: 250px;
+	}
+}
