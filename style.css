@@ -25,13 +25,16 @@ img {
 }
 
 body {
-	background: #542f19 url(images/wood.png) top left fixed;
+	background: #542f19 url(images/wood.webp) top left fixed;
   	color: #FFF;
   	font-family: 'AllerDisplay', Arial, sans-serif;
   	font-size: 18px;
   	line-height: 1;
   	position: relative;
   	text-align: center;
+}
+body.nowebp {
+    background-image: url(images/wood.png);
 }
 
 a, a:hover {
@@ -66,6 +69,9 @@ article .logo img {
 
 article:first-of-type {
 	width: 100%;
+}
+article:first-of-type .logo {
+	font-size: 60px;
 }
 article:first-of-type .logo img {
 	width: 200px;
@@ -103,6 +109,6 @@ article .social a img {
 
 @media (max-width: 586px) {
 	article:first-of-type .social {
-		max-width: 250px;
+		max-width: 300px;
 	}
 }
