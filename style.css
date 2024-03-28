@@ -46,10 +46,19 @@ h1, h2 {
 
 main {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	margin: 0 auto;
+	min-height: Calc(100vh - 60px);
+	max-width: 1200px;
+}
+
+.sites {
+	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: flex-start;
-	padding: 30px;
+	align-items: center;
 	gap: 60px 30px;
 }
 
@@ -104,6 +113,8 @@ article .social a img {
 @media (max-width: 1000px) {
 	main {
 		padding-bottom: 60px;
+		display: block;
+		min-height: 0;
 	}
 	article {
 		width: 100%;
