@@ -25,7 +25,7 @@ img {
 }
 
 body {
-	background: #542f19 url(images/wood.webp) top left fixed;
+	background: #542f19 url(images/wood.png) top center fixed;
   	color: #FFF;
   	font-family: 'AllerDisplay', Arial, sans-serif;
   	font-size: 18px;
@@ -33,20 +33,22 @@ body {
   	position: relative;
   	text-align: center;
 }
-body.nowebp {
-    background-image: url(images/wood.png);
-}
 
 a, a:hover {
 	color: #FFF;
 	text-decoration: none;
 }
 
+h1, h2 {
+	font-weight: normal;
+	margin: 0;
+}
+
 main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: flex-start;
 	padding: 30px;
 	gap: 60px 30px;
 }
@@ -56,24 +58,26 @@ article {
 	width: Calc(33% - 20px);
 }
 
-article .logo {
-	display: inline-block;
-	font-size: 40px;
+article h2 {
+	font-size: 36px;
 }
-article .logo img {
+article h2 a {
+	display: inline-block;
+}
+article h2 img {
 	display: block;
 	margin: 0 auto 5px;
-	width: 150px;
+	width: 120px;
 	height: auto!important;
 }
 
 article:first-of-type {
 	width: 100%;
 }
-article:first-of-type .logo {
+article:first-of-type h2 {
 	font-size: 60px;
 }
-article:first-of-type .logo img {
+article:first-of-type h2 img {
 	width: 200px;
 }
 
@@ -93,7 +97,6 @@ article .social a {
 }
 article .social a img {
 	width: auto!important;
-	height: 32px;
 	filter: brightness(0) invert(1);
 }
 
@@ -107,7 +110,7 @@ article .social a img {
 	}
 }
 
-@media (max-width: 586px) {
+@media (max-width: 600px) {
 	article:first-of-type .social {
 		max-width: 300px;
 	}
