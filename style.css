@@ -90,6 +90,10 @@ article:first-of-type h2 img {
 	width: 200px;
 }
 
+article p {
+	font-family: Arial, sans-serif;
+}
+
 article .social {
 	list-style: none;
 	margin: 10px auto 0;
