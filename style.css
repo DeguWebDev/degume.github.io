@@ -123,6 +123,9 @@ p {
 .swiper-button-next, .swiper-button-prev {
 	color: #FFF;
 }
+.swiper-button-next::after, .swiper-button-prev::after {
+	text-shadow: 0 0 10px #542f19, 0 0 15px #542f19;
+}
 .swiper-scrollbar {
 	background: rgba(0,0,0,0.35);
 }
@@ -136,6 +139,8 @@ p {
 	}
 	.social {
 		max-width: 250px;
+		min-height: 88px;
+		align-items: flex-start;
 	}	
 	.tooltiptext {
 		display: none;
@@ -149,4 +154,7 @@ p {
 	.break {
 		display: block;
 	}
+	.social {
+		min-height: 0;
+	}	
 }
