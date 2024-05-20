@@ -9,10 +9,10 @@
     <meta name="robots" content="noai, noimageai" />
     <meta name="google-site-verification" content="DhYTl3PVQdqmGQ0svoOgGB4VVKvYlfyollccGGhc1bQ" />
     <title>Hi, I'm Degu!</title>
-    <meta name="description" content="I'm a Colorado-based rodent/rabbit artist and web developer. Degu's brands include DeguArts, Degu Web Dev, Degu Press, and HamsterArts." />
+    <meta name="description" content="I'm a Colorado-based rodent/rabbit artist and web developer. My brands include DeguArts, Degu Web Dev, Degu Press, and HamsterArts." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="Hi, I'm Degu!" />
-    <meta property="og:description" content="I'm a Colorado-based rodent/rabbit artist and web developer. Degu's brands include DeguArts, Degu Web Dev, Degu Press, and HamsterArts." />
+    <meta property="og:description" content="I'm a Colorado-based rodent/rabbit artist and web developer. My brands include DeguArts, Degu Web Dev, Degu Press, and HamsterArts." />
     <meta property="og:url" content="https://degu.me" />
     <meta property="og:site_name" content="degu.me" />
     <meta property="og:image" content="https://degu.me/images/ogimg.jpg" />
@@ -22,10 +22,6 @@
 </head>
 <body>
     <main itemscope itemtype="https://schema.org/Organization">
-        <div style="display:none">
-            <a href="https://degu.me" itemprop="url">https://degu.me</a>
-            <span itemprop="name">DeguArts LLC</span>
-        </div>
         <div class="sr">
             <h1>Hi, I'm Degu!</h1>
             <p itemprop="description">Degu is a Colorado-based rodent/rabbit artist and web developer. You can view more information on Degu's brands, such as DeguArts, Degu Web Dev, Degu Press, and HamsterArts.</p>
@@ -33,16 +29,21 @@
         <div class="swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <article class="brand">
+                    <article class="brand" itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+                        <div style="display:none">
+                            <span itemprop="name">DeguArts</span>
+                            <span itemprop="alternateName">Degu Arts</span>
+                            <a href="https://deguarts.com" itemprop="url">https://deguarts.com</a>
+                        </div>
                         <h2><a href="https://deguarts.com">
                         <picture>
                             <source srcset="images/deguarts.webp" type="image/webp" />
                             <source srcset="images/deguarts.png" type="image/png" />
                             <img src="images/deguarts.png" alt="" width="200" height="200" itemprop="logo" />
                         </picture>DeguArts</a></h2>
-                        <p>Rodent & Rabbit Art</p> 
+                        <p itemprop="description">Rodent & Rabbit Art</p> 
                         <ul class="social">
-                            <li><a href="https://deguarts.com" itemprop="sameAs">
+                            <li><a href="https://deguarts.com">
                                 <img src="images/web.svg" alt="" width="32" height="32" />
                                 <span class="tooltiptext">
                                     <span class="sr">DeguArts </span>Website
@@ -82,12 +83,12 @@
                                 <span class="tooltiptext">
                                     <span class="sr">DeguArts on </span>ToyHouse<span class="sr"> (opens in a new window)</span>
                                 </span></a></li>-->
-                            <li><a href="https://t.me/deguarts" target="_blank" rel="noopener">
+                            <li><a href="https://t.me/deguarts" target="_blank" rel="noopener" itemprop="sameAs">
                                 <img src="images/telegram.svg" alt="" width="32" height="32" />
                                 <span class="tooltiptext">
                                     <span class="sr">@deguarts on </span>Telegram<span class="sr"> (opens in a new window)</span>
                                 </span></a></li>
-                            <li><a href="mailto:deguarts@pm.me">
+                            <li><a href="mailto:deguarts@pm.me" itemprop="email">
                                 <img src="images/email.svg" alt="" width="32" height="32" />
                                 <span class="tooltiptext">
                                     Email<span class="sr"> deguarts@pm.me</span>
@@ -96,26 +97,31 @@
                     </article>
                 </div>
                 <div class="swiper-slide">
-                    <article class="brand">
+                    <article class="brand" itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+                        <div style="display:none">
+                            <span itemprop="name">Degu Web Dev</span>
+                            <span itemprop="alternateName">Degu Website Development</span>
+                            <a href="https://deguweb.dev" itemprop="url">https://deguweb.dev</a>
+                        </div>
                         <h2><a href="https://deguweb.dev" target="_blank" rel="noopener">
                         <picture>
                             <source srcset="images/deguwebdev.webp" type="image/webp" />
                             <source srcset="images/deguwebdev.png" type="image/png" />
-                            <img src="images/deguwebdev.png" alt="" width="200" height="200" />
+                            <img src="images/deguwebdev.png" alt="" width="200" height="200" itemprop="logo" />
                         </picture>Degu <span class="break">Web Dev</span><span class="sr"> (opens in a new window)</span></a></h2>
-                        <p>Website Development</p>
+                        <p itemprop="description">Website Development</p>
                         <ul class="social">
-                            <li><a href="https://deguweb.dev" target="_blank" rel="noopener" itemprop="sameAs">
+                            <li><a href="https://deguweb.dev" target="_blank" rel="noopener">
                                 <img src="images/web.svg" alt="" width="32" height="32" loading="lazy" />
                                 <span class="tooltiptext">
                                     <span class="sr">Degu Web Dev </span>Website<span class="sr"> (opens in a new window)</span>
                                 </span></a></li>
-                            <li><a href="https://t.me/deguarts" target="_blank" rel="noopener">
+                            <li><a href="https://t.me/deguarts" target="_blank" rel="noopener" itemprop="sameAs">
                                 <img src="images/telegram.svg" alt="" width="32" height="32" />
                                 <span class="tooltiptext">
                                     <span class="sr">@deguarts on </span>Telegram<span class="sr"> (opens in a new window)</span>
                                 </span></a></li>
-                            <li><a href="mailto:deguwebdev@pm.me">
+                            <li><a href="mailto:deguwebdev@pm.me" itemprop="email">
                                 <img src="images/email.svg" alt="" width="32" height="32" loading="lazy" />
                                 <span class="tooltiptext">
                                     Email<span class="sr"> deguwebdev@pm.me</span>
@@ -124,16 +130,21 @@
                     </article>
                 </div>
                 <div class="swiper-slide">
-                    <article class="brand">
+                    <article class="brand" itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+                        <div style="display:none">
+                            <span itemprop="name">Degu Press</span>
+                            <span itemprop="alternateName">Degu Press Books</span>
+                            <a href="https://www.degupress.org" itemprop="url">https://www.degupress.org</a>
+                        </div>
                         <h2><a href="https://www.degupress.org" target="_blank" rel="noopener">
                         <picture>
                             <source srcset="images/degupress.webp" type="image/webp" />
                             <source srcset="images/degupress.png" type="image/png" />
-                            <img src="images/degupress.png" alt="" width="200" height="200" />
+                            <img src="images/degupress.png" alt="" width="200" height="200" itemprop="logo" />
                         </picture>Degu Press<span class="sr"> (opens in a new window)</span></a></h2>
-                        <p>Animal-Focused <span class="break">Book Publishing</span></p>
+                        <p itemprop="description">Animal-Focused <span class="break">Book Publishing</span></p>
                         <ul class="social">
-                            <li><a href="https://www.degupress.org" target="_blank" rel="noopener" itemprop="sameAs">
+                            <li><a href="https://www.degupress.org" target="_blank" rel="noopener">
                                 <img src="images/web.svg" alt="" width="32" height="32" loading="lazy" />
                                 <span class="tooltiptext">
                                     <span class="sr">Degu Press </span>Website<span class="sr"> (opens in a new window)</span>
@@ -153,7 +164,7 @@
                                 <span class="tooltiptext">
                                     <span class="sr">@degupress on </span>Instagram<span class="sr"> (opens in a new window)</span>
                                 </span></a></li>
-                            <li><a href="mailto:info@degupress.org">
+                            <li><a href="mailto:info@degupress.org" itemprop="email">
                                 <img src="images/email.svg" alt="" width="32" height="32" loading="lazy" />
                                 <span class="tooltiptext">
                                     Email<span class="sr"> info@degupress.org</span>
@@ -162,16 +173,21 @@
                     </article>
                 </div>
                 <div class="swiper-slide">
-                    <article class="brand">
+                    <article class="brand" itemprop="brand" itemscope itemtype="https://schema.org/Organization">
+                        <div style="display:none">
+                            <span itemprop="name">HamsterArts</span>
+                            <span itemprop="alternateName">Hamster Arts</span>
+                            <a href="https://hamsterarts.com" itemprop="url">https://hamsterarts.com</a>
+                        </div>
                         <h2><a href="https://hamsterarts.com" target="_blank" rel="noopener">
                         <picture>
                             <source srcset="images/hamsterarts.webp" type="image/webp" />
                             <source srcset="images/hamsterarts.png" type="image/png" />
-                            <img src="images/hamsterarts.png" alt="" width="200" height="200" />
+                            <img src="images/hamsterarts.png" alt="" width="200" height="200" itemprop="logo" />
                         </picture>Hamster<span class="break">Arts</span><span class="sr"> (opens in a new window)</span></a></h2>
-                        <p>Miniature Merchandise</p>
+                        <p itemprop="description">Miniature Merchandise</p>
                         <ul class="social">
-                            <li><a href="https://hamsterarts.com" target="_blank" rel="noopener" itemprop="sameAs">
+                            <li><a href="https://hamsterarts.com" target="_blank" rel="noopener">
                                 <img src="images/web.svg" alt="" width="32" height="32" loading="lazy" />
                                 <span class="tooltiptext">
                                     <span class="sr">HamsterArts </span>Website<span class="sr"> (opens in a new window)</span>
@@ -193,6 +209,16 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-scrollbar"></div>
+        </div>
+        <div style="display:none">
+            <a href="https://degu.me" itemprop="url">https://degu.me</a>
+            <span itemprop="name">DeguArts</span>
+            <span itemprop="alternateName">Degu Arts</span>
+            <span itemprop="legalName">DeguArts LLC</span>
+            <img itemprop="logo" src="https://degu.me/images/deguarts.png" alt="DeguArts Logo" loading="lazy" />
+            <img itemprop="image" src="https://degu.me/images/deguarts.png" alt="DeguArts Logo" loading="lazy" />
+            <a href="https://www.instagram.com/deguarts" itemprop="sameAs">Instagram</a>
+            <a href="https://bsky.app/profile/deguarts.com" itemprop="sameAs">Bluesky</a>
         </div>
     </main>
     <script src="swiper.min.js"></script>
